@@ -1,0 +1,21 @@
+namespace RentalCarSystem.Domain;
+
+/// <summary>
+/// 帳號領域物件
+/// </summary>
+public class Account
+{
+    public string AccountId { get; private set; } = string.Empty;
+    public string Username { get; private set; } = string.Empty;
+    public string Password { get; private set; } = string.Empty;
+    public DateTime RegisteredDate { get; private set; }
+
+    /// <summary>
+    /// 註冊帳號
+    /// </summary>
+    public bool RegisterAccount(string username, string password, string email)
+    {
+        // TODO: 實作帳號註冊邏輯 - TDD 紅燈測試，尚未實作
+        throw new NotImplementedException();
+    }
+}

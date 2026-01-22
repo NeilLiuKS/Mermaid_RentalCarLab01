@@ -1,6 +1,9 @@
 <Solution>
   <Folder Name="/方案項目/">
+    <File Path="CD_01_車輛租用系統.md" />
     <File Path="SD_01_車輛租用系統.md" />
     <File Path="UC_01_車輛租用系統.md" />
   </Folder>
+  <Project Path="src/RentalCarSystem.Domain/RentalCarSystem.Domain.csproj" />
+  <Project Path="tests/RentalCarSystem.Tests/RentalCarSystem.Tests.csproj" />
 </Solution>
