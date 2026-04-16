@@ -4,8 +4,8 @@ using RentalCarSystem.Domain;
 namespace RentalCarSystem.Tests;
 
 /// <summary>
-/// Account »â°ìª«¥óªº TDD ¬õ¿O´ú¸Õ
-/// ´ú¸Õ±b¸¹µù¥U¥\¯à
+/// Account é ˜åŸŸç‰©ä»¶çš„ TDD ç´…ç‡ˆæ¸¬è©¦
+/// æ¸¬è©¦å¸³è™Ÿè¨»å†ŠåŠŸèƒ½
 /// </summary>
 [TestClass]
 public class AccountTests
@@ -75,6 +75,99 @@ public class AccountTests
 
         // Act
         bool actual = account.RegisterAccount(username, password, email);
+
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void Login_WithCorrectCredentials_ShouldReturnTrue()
+    {
+        // Arrange
+        var account = new Account();
+        string username = "testuser";
+        string password = "password123";
+        string email = "testuser@example.com";
+        account.RegisterAccount(username, password, email);
+        bool expected = true;
+
+        // Act
+        bool actual = account.Login(username, password);
+
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void Login_WithUnregisteredAccount_ShouldReturnFalse()
+    {
+        // Arrange
+        var account = new Account();
+        bool expected = false;
+
+        // Act
+        bool actual = account.Login("testuser", "password123");
+
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void Login_WithWrongPassword_ShouldReturnFalse()
+    {
+        // Arrange
+        var account = new Account();
+        account.RegisterAccount("testuser", "password123", "testuser@example.com");
+        bool expected = false;
+
+        // Act
+        bool actual = account.Login("testuser", "wrongpassword");
+
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void Login_WithEmptyUsername_ShouldReturnFalse()
+    {
+        // Arrange
+        var account = new Account();
+        account.RegisterAccount("testuser", "password123", "testuser@example.com");
+        bool expected = false;
+
+        // Act
+        bool actual = account.Login("", "password123");
+
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void Login_WithEmptyPassword_ShouldReturnFalse()
+    {
+        // Arrange
+        var account = new Account();
+        account.RegisterAccount("testuser", "password123", "testuser@example.com");
+        bool expected = false;
+
+        // Act
+        bool actual = account.Login("testuser", "");
+
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void Login_WhenSuccessful_ShouldSetIsLoggedInToTrue()
+    {
+        // Arrange
+        var account = new Account();
+        account.RegisterAccount("testuser", "password123", "testuser@example.com");
+        bool expected = true;
+
+        // Act
+        account.Login("testuser", "password123");
+        bool actual = account.IsLoggedIn;
 
         // Assert
         Assert.AreEqual(expected, actual);

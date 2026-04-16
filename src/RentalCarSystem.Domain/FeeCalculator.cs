@@ -1,7 +1,7 @@
 namespace RentalCarSystem.Domain;
 
 /// <summary>
-/// ╞╡╙В╜p╨Б╬╧╩Б╟Л╙╚╔С
+/// Г╖÷И┤▒Х╗┬Г╝≈Е≥╗И═≤Е÷÷Г┴╘Д╩╤
 /// </summary>
 public class FeeCalculator
 {
@@ -9,20 +9,20 @@ public class FeeCalculator
     public decimal Discount { get; private set; }
 
     /// <summary>
-    /// ╜p╨Б╞╡╙В
+    /// Х╗┬Г╝≈Г╖÷И┤▒
     /// </summary>
     public decimal CalculateFee(decimal dailyRate, int days)
     {
-        // TODO: ╧Й╖@╞╡╙В╜p╨Беч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°Г╖÷И┤▒Х╗┬Г╝≈И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 
     /// <summary>
-    /// ╜p╨Б╞╡╙В║]╖t╖И╕╘║^
+    /// Х╗┬Г╝≈Г╖÷И┤▒О╪┬Е░╚Ф┼≤Ф┴ёО╪┴
     /// </summary>
     public decimal CalculateFee(decimal dailyRate, int days, decimal discountRate)
     {
-        // TODO: ╧Й╖@╞╡╙В╜p╨Беч©Х║]╖t╖И╕╘║^- TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°Г╖÷И┤▒Х╗┬Г╝≈И┌▐Х╪╞О╪┬Е░╚Ф┼≤Ф┴ёО╪┴- TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 }

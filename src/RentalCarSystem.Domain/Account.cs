@@ -1,7 +1,7 @@
 namespace RentalCarSystem.Domain;
 
 /// <summary>
-/// ±b¸¹»â°ìª«¥ó
+/// å¸³è™Ÿé ˜åŸŸç‰©ä»¶
 /// </summary>
 public class Account
 {
@@ -9,13 +9,32 @@ public class Account
     public string Username { get; private set; } = string.Empty;
     public string Password { get; private set; } = string.Empty;
     public DateTime RegisteredDate { get; private set; }
+    public bool IsLoggedIn { get; private set; }
 
     /// <summary>
-    /// µù¥U±b¸¹
+    /// è¨»å†Šå¸³è™Ÿ
     /// </summary>
     public bool RegisterAccount(string username, string password, string email)
     {
-        // TODO: ¹ê§@±b¸¹µù¥UÅŞ¿è - TDD ¬õ¿O´ú¸Õ¡A©|¥¼¹ê§@
+        // TODO: å¯¦ä½œå¸³è™Ÿè¨»å†Šé‚è¼¯ - TDD ç´…ç‡ˆæ¸¬è©¦ï¼Œå°šæœªå¯¦ä½œ
         throw new NotImplementedException();
+    }
+
+    /// <summary>
+    /// ç™»å…¥å¸³è™Ÿ
+    /// </summary>
+    public bool Login(string username, string password)
+    {
+        if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            return false;
+
+        if (string.IsNullOrEmpty(AccountId))
+            return false;
+
+        if (Username != username || Password != password)
+            return false;
+
+        IsLoggedIn = true;
+        return true;
     }
 }

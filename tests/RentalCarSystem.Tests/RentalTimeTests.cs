@@ -4,8 +4,8 @@ using RentalCarSystem.Domain;
 namespace RentalCarSystem.Tests;
 
 /// <summary>
-/// RentalTime »â°ìª«¥óªº TDD ¬õ¿O´ú¸Õ
-/// ´ú¸Õ¯²¥Î®É¶¡°Ï¶¡¿ï¾Ü¥\¯à
+/// RentalTime é ˜åŸŸç‰©ä»¶çš„ TDD ç´…ç‡ˆæ¸¬è©¦
+/// æ¸¬è©¦ç§Ÿç”¨æ™‚é–“å€é–“é¸æ“‡åŠŸèƒ½
 /// </summary>
 [TestClass]
 public class RentalTimeTests
