@@ -1,7 +1,7 @@
 namespace RentalCarSystem.Domain;
 
 /// <summary>
-/// ╞╡╗╝╗t╡н╩Б╟Л╙╚╔С
+/// Г╖÷Х╩┼ГЁ╩Г╣╠И═≤Е÷÷Г┴╘Д╩╤
 /// </summary>
 public class RentalSystem
 {
@@ -11,38 +11,38 @@ public class RentalSystem
     public int RentalDays { get; private set; }
 
     /// <summary>
-    /// ╞╡╔н╗╝╫Ь
+    /// Г╖÷Г■╗Х╩┼Х╪⌡
     /// </summary>
     public bool ToRentalCar(string carType, DateTime startTime, DateTime endTime)
     {
-        // TODO: ╧Й╖@╞╡╗╝еч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°Г╖÷Х╩┼И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 
     /// <summary>
-    /// ©О╬э╗╝╚╛
+    /// И│╦Ф⌠┤Х╩┼Е·▀
     /// </summary>
     public void SelectCarType(string carType)
     {
-        // TODO: ╧Й╖@©О╬э╗╝╚╛еч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°И│╦Ф⌠┤Х╩┼Е·▀И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 
     /// <summary>
-    /// ©О╬э╞╡╔н╝и╤║╟о╤║
+    /// И│╦Ф⌠┤Г╖÷Г■╗Ф≥┌И√⌠Е█─И√⌠
     /// </summary>
     public void SelectRentalTime(DateTime startTime, DateTime endTime)
     {
-        // TODO: ╧Й╖@©О╬э╞╡╔н╝и╤║еч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°И│╦Ф⌠┤Г╖÷Г■╗Ф≥┌И√⌠И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 
     /// <summary>
-    /// ╜p╨Б╞╡╙В
+    /// Х╗┬Г╝≈Г╖÷И┤▒
     /// </summary>
     public decimal CalculateFee()
     {
-        // TODO: ╧Й╖@╞╡╙В╜p╨Беч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°Г╖÷И┤▒Х╗┬Г╝≈И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 }

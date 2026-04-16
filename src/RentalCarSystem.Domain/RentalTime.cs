@@ -1,7 +1,7 @@
 namespace RentalCarSystem.Domain;
 
 /// <summary>
-/// ╞╡╔н╝и╤║╩Б╟Л╙╚╔С
+/// Г╖÷Г■╗Ф≥┌И√⌠И═≤Е÷÷Г┴╘Д╩╤
 /// </summary>
 public class RentalTime
 {
@@ -10,11 +10,11 @@ public class RentalTime
     public int Duration { get; private set; }
 
     /// <summary>
-    /// ©О╬э╞╡╔н╝и╤║╟о╤║
+    /// И│╦Ф⌠┤Г╖÷Г■╗Ф≥┌И√⌠Е█─И√⌠
     /// </summary>
     public bool SelectRentalTime(DateTime startTime, DateTime endTime)
     {
-        // TODO: ╧Й╖@©О╬э╞╡╔н╝и╤║еч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°И│╦Ф⌠┤Г╖÷Г■╗Ф≥┌И√⌠И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 }

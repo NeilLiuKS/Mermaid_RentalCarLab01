@@ -4,9 +4,9 @@ using RentalCarSystem.Domain;
 namespace RentalCarSystem.Tests;
 
 /// <summary>
-/// FeeCalculator »â°ìª«¥óªº TDD ¬õ¿O´ú¸Õ
-/// ´ú¸Õ¯²ª÷­pºâ¥\¯à
-/// ¯²ª÷¶O¥Î¡GCar 1000¤¸/¤Ñ¡BSUV 1500¤¸/¤Ñ¡BTruck 2000¤¸/¤Ñ¡BSportsCar 3000¤¸/¤Ñ¡BElectricCar 2800¤¸/¤Ñ
+/// FeeCalculator é ˜åŸŸç‰©ä»¶çš„ TDD ç´…ç‡ˆæ¸¬è©¦
+/// æ¸¬è©¦ç§Ÿé‡‘è¨ˆç®—åŠŸèƒ½
+/// ç§Ÿé‡‘è²»ç”¨ï¼šCar 1000å…ƒ/å¤©ã€SUV 1500å…ƒ/å¤©ã€Truck 2000å…ƒ/å¤©ã€SportsCar 3000å…ƒ/å¤©ã€ElectricCar 2800å…ƒ/å¤©
 /// </summary>
 [TestClass]
 public class FeeCalculatorTests

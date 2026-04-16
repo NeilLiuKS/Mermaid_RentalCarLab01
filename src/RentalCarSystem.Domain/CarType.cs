@@ -1,8 +1,8 @@
 namespace RentalCarSystem.Domain;
 
 /// <summary>
-/// ¨®«¬»â°ìª«¥ó
-/// ¨®«¬¦³¡GCar 1000¤¸/¤Ñ¡BSUV 1500¤¸/¤Ñ¡BTruck 2000¤¸/¤Ñ¡BSportsCar 3000¤¸/¤Ñ¡BElectricCar 2800¤¸/¤Ñ
+/// è»Šå‹é ˜åŸŸç‰©ä»¶
+/// è»Šå‹æœ‰ï¼šCar 1000å…ƒ/å¤©ã€SUV 1500å…ƒ/å¤©ã€Truck 2000å…ƒ/å¤©ã€SportsCar 3000å…ƒ/å¤©ã€ElectricCar 2800å…ƒ/å¤©
 /// </summary>
 public class CarType
 {
@@ -11,11 +11,11 @@ public class CarType
     public decimal DailyRate { get; private set; }
 
     /// <summary>
-    /// ¿ï¾Ü¨®«¬
+    /// é¸æ“‡è»Šå‹
     /// </summary>
     public void SelectCarType(string typeName)
     {
-        // TODO: ¹ê§@¿ï¾Ü¨®«¬ÅŞ¿è - TDD ¬õ¿O´ú¸Õ¡A©|¥¼¹ê§@
+        // TODO: å¯¦ä½œé¸æ“‡è»Šå‹é‚è¼¯ - TDD ç´…ç‡ˆæ¸¬è©¦ï¼Œå°šæœªå¯¦ä½œ
         throw new NotImplementedException();
     }
 }

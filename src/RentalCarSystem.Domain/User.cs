@@ -1,7 +1,7 @@
 namespace RentalCarSystem.Domain;
 
 /// <summary>
-/// ╗о╔н╙л╩Б╟Л╙╚╔С
+/// Д╫©Г■╗Х─┘И═≤Е÷÷Г┴╘Д╩╤
 /// </summary>
 public class User
 {
@@ -10,20 +10,20 @@ public class User
     public string Email { get; private set; } = string.Empty;
 
     /// <summary>
-    /// ╣Ы╔U╠b╦╧
+    /// Х╗╩Е├┼Е╦ЁХ≥÷
     /// </summary>
     public bool RegisterAccount(string userName, string email)
     {
-        // TODO: ╧Й╖@╗о╔н╙л╣Ы╔Uеч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°Д╫©Г■╗Х─┘Х╗╩Е├┼И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 
     /// <summary>
-    /// ╞╡╔н╗╝╫Ь
+    /// Г╖÷Г■╗Х╩┼Х╪⌡
     /// </summary>
     public object? ToRentalCar()
     {
-        // TODO: ╧Й╖@╞╡╗╝еч©Х - TDD ╛У©O╢З╦у║A╘|╔╪╧Й╖@
+        // TODO: Е╞╕Д╫°Г╖÷Х╩┼И┌▐Х╪╞ - TDD Г╢┘Г┤┬Ф╦╛Х╘╕О╪▄Е╟ Ф°╙Е╞╕Д╫°
         throw new NotImplementedException();
     }
 }
