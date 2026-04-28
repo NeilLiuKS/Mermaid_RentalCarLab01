@@ -14,8 +14,17 @@ public class User
     /// </summary>
     public bool RegisterAccount(string userName, string email)
     {
-        // TODO: 實作使用者註冊邏輯 - TDD 紅燈測試，尚未實作
-        throw new NotImplementedException();
+        if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrWhiteSpace(email))
+            return false;
+
+        if (!email.Contains('@'))
+            return false;
+
+        UserId = Guid.NewGuid().ToString("N");
+        UserName = userName.Trim();
+        Email = email.Trim();
+
+        return true;
     }
 
     /// <summary>

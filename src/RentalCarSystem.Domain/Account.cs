@@ -16,8 +16,23 @@ public class Account
     /// </summary>
     public bool RegisterAccount(string username, string password, string email)
     {
-        // TODO: 實作帳號註冊邏輯 - TDD 紅燈測試，尚未實作
-        throw new NotImplementedException();
+        if (string.IsNullOrWhiteSpace(username) ||
+            string.IsNullOrWhiteSpace(password) ||
+            string.IsNullOrWhiteSpace(email))
+        {
+            return false;
+        }
+
+        if (!email.Contains('@'))
+            return false;
+
+        AccountId = Guid.NewGuid().ToString("N");
+        Username = username.Trim();
+        Password = password;
+        RegisteredDate = DateTime.Now;
+        IsLoggedIn = false;
+
+        return true;
     }
 
     /// <summary>
